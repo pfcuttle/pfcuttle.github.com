@@ -1,8 +1,15 @@
-<html>
-    <head>
-        <title>Default</title>
-    </head>
-    <body>
-        Default
-    </body>
-</html>
+---
+layout: default
+title: Index
+---
+
+{% for post in site.posts limit:5 %}
+<article>
+	<header>
+	<h1>{{ post.title }}</h1>
+		<time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date_to_long_string }}</time>
+	</header>
+
+	{{ post.content }}
+</article>
+{% endfor %}

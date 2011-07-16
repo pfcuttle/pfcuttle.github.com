@@ -1,0 +1,6 @@
+---
+layout: default
+title: Initial
+---
+
+This should be considered a *lorem ipsum* for now.
